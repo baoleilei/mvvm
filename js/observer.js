@@ -61,7 +61,9 @@ Dep.prototype = {
     addSub: function(sub) {
         this.subs.push(sub);
     },
-
+    show() {
+        console.log(this.subs)
+    },
     depend: function() {
         Dep.target.addDep(this);
     },
